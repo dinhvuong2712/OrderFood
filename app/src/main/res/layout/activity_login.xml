@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud_login_register"
+    android:padding="15dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="center"
+        android:foregroundGravity="center_horizontal"
+        android:text="Đăng nhập"
+        android:textSize="45dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_register_form">
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tài khoản"
+            android:padding="12dp"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"
+            android:textColorHint="@android:color/holo_orange_light"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:background="@drawable/border"
+            android:drawablePadding="12dp"/>
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:padding="12dp"
+            android:textSize="20dp"
+            android:layout_marginVertical="10dp"
+            android:textColorHint="@android:color/holo_orange_light"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:background="@drawable/border"
+            android:drawablePadding="12dp"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhớ mật khẩu"
+            android:textSize="17dp"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="18dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_bottom"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="13dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/btn_face"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textSize="18dp"
+                android:drawablePadding="-13dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/background_link"
+                android:drawableLeft="@drawable/ic_facebook_logo"/>
+            <TextView
+                android:id="@+id/btn_google"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Google"
+                android:textSize="18dp"
+                android:drawablePadding="-20dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/background_link"
+                android:drawableLeft="@drawable/ic_google_logo"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/bt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản? Đăng ký ngay."
+            android:textSize="18dp"
+            android:paddingVertical="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="#00FFFF"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>
